@@ -1,0 +1,23 @@
+input {
+  &:not(:focus):valid {
+    color: blue;
+    margin: 10px;
+    outline: 1px solid #green;
+  }
+  &:focus {
+    &:valid {
+      color: blue;
+
+    }
+    &:invalid {
+      color: red;
+
+    }
+  }
+  &:not(:focus):invalid {
+
+  }
+  &:required:not(:focus):invalid {
+
+  }
+}
