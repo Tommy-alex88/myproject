@@ -1,23 +1,22 @@
-input {
-  &:not(:focus):valid {
-    color: blue;
-    margin: 10px;
-    outline: 1px solid #green;
-  }
-  &:focus {
-    &:valid {
-      color: blue;
-
-    }
-    &:invalid {
-      color: red;
-
-    }
-  }
-  &:not(:focus):invalid {
-
-  }
-  &:required:not(:focus):invalid {
-
-  }
-}
+input
+  &:not(:focus):valid
+    color: blue
+    margin: 10px
+    outline: 1px solid #3b7cff
+  &:focus
+    &:valid
+      color: blue
+      margin: 10px
+      outline: 1px solid #3b7cff
+    &:invalid
+      color: red
+      margin: 10px
+      outline: 1px solid #ff2e2e
+  &:not(:focus):invalid
+    color: red
+    margin: 10px
+    outline: 1px solid #ff2e2e
+  &:required:not(:focus):invalid
+    color: red
+    margin: 10px
+    outline: 1px solid #d6d6d6
